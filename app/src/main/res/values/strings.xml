@@ -12,4 +12,6 @@
     <string name="menu_discover">Discover</string>
     <string name="menu_library">Library</string>
     <string name="menu_account">Account</string>
+    <string name="exp_fyp">for you page</string>
+    <string name="exp_trending">trending now</string>
 </resources>
