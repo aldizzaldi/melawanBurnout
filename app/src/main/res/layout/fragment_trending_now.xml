@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rv_trending_now"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:listitem="@layout/item_row_fyp" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trending_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_row_book" />
 
-    <TextView
-        android:layout_gravity="center"
-        android:text="trending"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+<!--    <TextView-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="trending"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
 
 </FrameLayout>
