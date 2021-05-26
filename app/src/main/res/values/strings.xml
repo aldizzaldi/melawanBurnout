@@ -14,4 +14,7 @@
     <string name="menu_account">Account</string>
     <string name="exp_fyp">for you page</string>
     <string name="exp_trending">trending now</string>
+    <string name="username"> $username </string>
+    <string name="name"> $name </string>
+    <string name="bio"> $bio </string>
 </resources>
