@@ -4,7 +4,7 @@
     <string name="books_author">Books author</string>
     <string name="books_genre">Books genre</string>
     <string name="want_to_read">Want to read</string>
-    <string name="share">share</string>
+    <string name="read_more">Read More</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -33,4 +33,8 @@
     <string name="registerToolbar">Sign Up</string>
     <string name="btRegister">Sign Up</string>
     <string name="btn_link_to_login">Login</string>
+    <string name="ideas">$ideas ideas</string>
+    <string name="followers">$followers followers</string>
+    <string name="following">$following following</string>
+    <string name="overview">Books Overview</string>
 </resources>

@@ -60,5 +60,53 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
         tools:text="@string/bio" />
 
+    <LinearLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bio"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bio"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="@string/followers" />
+
+        <TextView
+            android:id="@+id/tv_ideas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="@string/ideas" />
+
+        <TextView
+            android:id="@+id/tv_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="@string/following" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_heroes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/description"
+        tools:listitem="@layout/item_grid_book" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
