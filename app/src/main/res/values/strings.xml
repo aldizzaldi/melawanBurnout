@@ -37,17 +37,28 @@
     <string name="followers">$followers followers</string>
     <string name="following">$following following</string>
     <string name="overview">Books Overview</string>
+    <string name="macapedia">Macapedia</string>
+    <string name="splash_copyright">copyright</string>
 
-    <string-array name="data_photo">
-        <item>https://upload.wikimedia.org/wikipedia/commons/8/87/Ahmad_Dahlan.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/3/3f/Ahmad_Yani.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/e/ed/Bung_Tomo.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/b/be/Col_Gatot_Subroto%2C_Kenang-Kenangan_Pada_Panglima_Besar_Letnan_Djenderal_Soedirman%2C_p27.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/3/3a/Ki_Hadjar_Dewantara_Mimbar_Umum_18_October_1949_p2.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/VP_Hatta.jpg/330px-VP_Hatta.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sudirman.jpg/486px-Sudirman.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/330px-Presiden_Sukarno.jpg</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/c/c3/Supomo_from_President_Website.JPG</item>
-        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TanMalaka_DariPendjara_ed3.jpg/330px-TanMalaka_DariPendjara_ed3.jpg</item>
+    <string-array name="genre_list">
+        <item>fiction</item>
+        <item>mystery thriller</item>
+        <item>fantasy</item>
+        <item>romance</item>
+        <item>science fiction</item>
+        <item>horror</item>
+        <item>humor</item>
+        <item>nonfiction</item>
+        <item>memoir autobiography</item>
+        <item>history biography</item>
+        <item>science technology</item>
+        <item>food cookbooks</item>
+        <item>graphic novels comics</item>
+        <item>poetry</item>
+        <item>young adult fiction</item>
+        <item>young adult fantasy</item>
+        <item>children</item>
+        <item>picture</item>
+
     </string-array>
 </resources>
