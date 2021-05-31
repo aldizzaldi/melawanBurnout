@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.example.capstone.R
 import com.example.capstone.databinding.ItemGridBookBinding
 
 class GridAdapter(private val listBook: ArrayList<Book>) : RecyclerView.Adapter<GridAdapter.GridViewHolder>() {
@@ -12,8 +13,12 @@ class GridAdapter(private val listBook: ArrayList<Book>) : RecyclerView.Adapter<
         fun bind(book: Book) {
             with(binding){
                 Glide.with(itemView.context)
+                        .applyDefaultRequestOptions(
+                                RequestOptions()
+                                        .placeholder(R.color.teal_200)
+                        )
                         .load(book.cover)
-                        .apply(RequestOptions().override(350, 550))
+                        .apply(RequestOptions().override(200, 300))
                         .into(imgGridCover)
             }
         }

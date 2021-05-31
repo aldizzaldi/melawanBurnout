@@ -103,9 +103,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_heroes"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="364dp"
+        android:layout_height="252dp"
         android:layout_below="@id/description"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="230dp"
         tools:listitem="@layout/item_grid_book" />
 
 
