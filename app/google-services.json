@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "448594680804",
+    "project_id": "boxwood-victor-313105",
+    "storage_bucket": "boxwood-victor-313105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448594680804:android:0f2a92413d9fa0a31685f1",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448594680804-s7fkp9ftga45j59k2132l1ggvbi03532.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9cktpE8pTmAY5sH_YxEO_B0I9sO8qQv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448594680804-s7fkp9ftga45j59k2132l1ggvbi03532.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

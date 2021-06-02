@@ -39,6 +39,7 @@
     <string name="overview">Books Overview</string>
     <string name="macapedia">Macapedia</string>
     <string name="splash_copyright">copyright</string>
+    <string name="sign_out">Sign Out</string>
 
     <string-array name="genre_list">
         <item>fiction</item>

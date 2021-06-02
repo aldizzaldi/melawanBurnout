@@ -17,7 +17,7 @@ class CobaGrid : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = CobaGridBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        listBook.addAll(getListCoba())
+//        listBook.addAll(getListCoba())
         showRecyclerGrid()
     }
 
@@ -27,18 +27,18 @@ class CobaGrid : AppCompatActivity() {
         binding.rvCoba.adapter = gridCobaAdapter
     }
 
-    fun getListCoba(): ArrayList<Book> {
-        val dataPhoto = resources.getStringArray(R.array.data_photo)
-        val listBook = ArrayList<Book>()
-        for (position in dataPhoto.indices) {
-            val book = Book(
-                    "title",
-                    "author",
-                    "genre",
-                    dataPhoto[position]
-            )
-            listBook.add(book)
-        }
-        return listBook
-    }
+//    fun getListCoba(): ArrayList<Book> {
+//        val dataPhoto = resources.getStringArray(R.array.data_photo)
+//        val listBook = ArrayList<Book>()
+//        for (position in dataPhoto.indices) {
+//            val book = Book(
+//                    "title",
+//                    "author",
+//                    "genre",
+//                    dataPhoto[position]
+//            )
+//            listBook.add(book)
+//        }
+//        return listBook
+//    }
 }

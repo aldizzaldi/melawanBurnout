@@ -101,14 +101,26 @@
             tools:text="@string/following" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_heroes"
-        android:layout_width="364dp"
-        android:layout_height="252dp"
-        android:layout_below="@id/description"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="230dp"
-        tools:listitem="@layout/item_grid_book" />
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="168dp"
+        android:text="@string/sign_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_heroes"-->
+<!--        android:layout_width="364dp"-->
+<!--        android:layout_height="252dp"-->
+<!--        android:layout_below="@id/description"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="230dp"-->
+<!--        tools:listitem="@layout/item_grid_book" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
