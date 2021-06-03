@@ -15,7 +15,7 @@ class GridAdapter(private val listBook: ArrayList<Book>) : RecyclerView.Adapter<
                 Glide.with(itemView.context)
                         .applyDefaultRequestOptions(
                                 RequestOptions()
-                                        .placeholder(R.color.teal_200)
+                                        .placeholder(R.color.yellow)
                         )
                         .load(book.cover)
                         .apply(RequestOptions().override(200, 300))
