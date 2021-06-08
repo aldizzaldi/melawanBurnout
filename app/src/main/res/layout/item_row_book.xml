@@ -88,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/blue_light"
                 android:text="@string/want_to_read"
                 android:textSize="10sp" />
 
@@ -95,8 +96,9 @@
                 android:id="@+id/btn_set_share"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="34dp"
                 android:layout_weight="1"
+                android:background="@color/blue_light"
                 android:text="@string/read_more"
                 android:textSize="10sp" />
         </LinearLayout>

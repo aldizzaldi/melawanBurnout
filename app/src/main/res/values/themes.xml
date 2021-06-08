@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.CapstoneNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.CapstoneNoActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_light</item>
         <item name="colorPrimaryVariant">@color/blue</item>
