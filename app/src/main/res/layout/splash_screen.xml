@@ -8,13 +8,13 @@
     tools:ignore="Overdraw">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
         android:contentDescription="@string/macapedia"
         android:src="@drawable/logo_macapedia"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
