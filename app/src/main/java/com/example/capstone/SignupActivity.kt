@@ -1,4 +1,4 @@
-package com.example.capstone
+    package com.example.capstone
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,7 +23,6 @@ class SignupActivity : AppCompatActivity() {
             val email = binding.registerEmail.text.toString()
             val password = binding.registerPassword.text.toString()
             val name = binding.registerName.text.toString()
-
             firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnSuccessListener{
                     val uid = firebaseAuth.currentUser?.uid
