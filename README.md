@@ -12,17 +12,17 @@ The main feature of this app is book recommender system, so the user could get t
      style="float: left; margin-right: 10px;"
      width="200" />
      
-<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/logo_macapedia.png"
+<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/logo_macapedia.jpeg"
      alt="melawanBurnout 2"
      style="float: left; margin-right: 10px;"
      width="200" />
      
-<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/home.png"
+<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/home.jpeg"
      alt="melawanBurnout 3"
      style="float: left; margin-right: 10px;"
      width="200" />
 
-<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/library.png"
+<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/library.jpeg"
      alt="melawanBurnout 4"
      style="float: left; margin-right: 10px;"
      width="200" />
