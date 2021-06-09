@@ -80,7 +80,6 @@ class ForYouFragment : Fragment() {
 
     private fun getDataFromAPI(){
         val client = AsyncHttpClient()
-//        client.addHeader("User-Agent", "request")
         val url = "http://34.101.254.188/predict"
 
         client.post(url, object : TextHttpResponseHandler(){
@@ -91,39 +90,19 @@ class ForYouFragment : Fragment() {
             ) {
                 val result = responseString
                 Log.d("hasil", result + "")
-//                binding.progressBar.visibility = View.INVISIBLE
-
                 try {
                     val responseObject = JSONObject(result)
                     val titles = responseObject.getJSONArray("titles")
                     val cover = responseObject.getJSONArray("image_urls")
-//                    Log.d("hasil title", "$yuy")
                     for (i in 0 until titles.length()){
                         val book = Book()
                         book.title = titles[i] as String?
                         book.cover = cover[i] as String?
                         listBook.add(book)
-
-//                        Log.d("beneran kan ini ?", titles[i] as String)
                     }
-
-//
-//                    for (i in 0 until responseObject.length()){
-//                        val item = responseObject.getJSONObject(i)
-//                        val titles = item.getString("login")
-//                        val avatar = item.getString("avatar_url")
-//                        val book = Book()
-//                        book
-//                        user.username = username
-//                        Log.d("hasil", username)
-//                        Log.d("hasil", avatar)
-//                        user.avatar = avatar
-//                        listUser.add(user)
-//                    }
                     showRecycleViewList()
 
                 }catch (e : Exception){
-//                    Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_SHORT).show()
                     e.printStackTrace()
                 }
             }
@@ -134,15 +113,13 @@ class ForYouFragment : Fragment() {
                 responseString: String?,
                 throwable: Throwable?
             ) {
-//                binding.progressBar.visibility = View.INVISIBLE
                 val errorMessage = when (statusCode) {
                     401 -> "$statusCode : Bad Request"
                     403 -> "$statusCode : Forbidden"
                     404 -> "$statusCode : Not Found"
                     else -> "$statusCode : ${error("eror")}"
                 }
-                Log.d("hasil", "error")
-//                Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_SHORT).show()
+                Log.d("hasil", errorMessage)
             }
 
         })
