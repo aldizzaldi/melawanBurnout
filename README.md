@@ -7,7 +7,7 @@ The main feature of this app is book recommender system, so the user could get t
 
 # Screenshot of this App
 
-<img src="src="https://github.com/aldizzaldi/melawanBurnout/screenshoot/readme_discover.png""
+<img src="https://github.com/aldizzaldi/melawanBurnout/screenshoot/readme_discover.png"
      alt="melawanBurnout 1"
      style="float: left; margin-right: 10px;"
      width="200" />
