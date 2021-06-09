@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="138dp"
-        android:text="Get Values"
+        android:text="@string/submit"
         android:onClick="getValues"/>
 
 </RelativeLayout>

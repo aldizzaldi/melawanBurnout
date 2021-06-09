@@ -42,6 +42,7 @@
     <string name="sign_out">Sign Out</string>
     <string name="choose_image">Choose Image</string>
     <string name="posts">What\'s on your mind?</string>
+    <string name="submit">Submit</string>
 
     <string-array name="genre_list">
         <item>fiction</item>
