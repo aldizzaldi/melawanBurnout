@@ -3,6 +3,9 @@ package com.example.capstone.data
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.example.capstone.R
 import com.example.capstone.databinding.ItemRowBookBinding
 
 class BookAdapter(private val listBook : ArrayList<Book>) : RecyclerView.Adapter<BookAdapter.CardViewViewHolder>() {
@@ -11,6 +14,11 @@ class BookAdapter(private val listBook : ArrayList<Book>) : RecyclerView.Adapter
     inner class CardViewViewHolder(private val binding: ItemRowBookBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(book: Book){
             with(binding){
+                Glide.with(itemView.context)
+                    .applyDefaultRequestOptions(RequestOptions()
+                        .placeholder(R.color.gray))
+                    .load(book.cover)
+                    .into(imgItemPhoto)
                 tvItemAuthor.text = book.author
                 tvItemGenre.text = book.genre
                 tvItemTittle.text = book.title

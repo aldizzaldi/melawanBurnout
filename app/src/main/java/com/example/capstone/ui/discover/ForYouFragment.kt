@@ -1,11 +1,22 @@
 package com.example.macapedia.ui.explore
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.capstone.R
+import com.example.capstone.data.Book
+import com.example.capstone.data.BookAdapter
+import com.example.capstone.databinding.FragmentForYouBinding
+import com.loopj.android.http.AsyncHttpClient
+import com.loopj.android.http.TextHttpResponseHandler
+import cz.msebera.android.httpclient.Header
+import org.json.JSONArray
+import org.json.JSONObject
+import java.lang.Exception
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +32,8 @@ class ForYouFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private var listBook : ArrayList<Book> = arrayListOf()
+    private lateinit var binding: FragmentForYouBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +49,13 @@ class ForYouFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_for_you, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding = FragmentForYouBinding.bind(view)
+        binding.rvForYou.setHasFixedSize(true)
+        getDataFromAPI()
     }
 
     companion object {
@@ -56,5 +76,81 @@ class ForYouFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun getDataFromAPI(){
+        val client = AsyncHttpClient()
+//        client.addHeader("User-Agent", "request")
+        val url = "http://34.101.254.188/predict"
+
+        client.post(url, object : TextHttpResponseHandler(){
+            override fun onSuccess(
+                statusCode: Int,
+                headers: Array<out Header>?,
+                responseString: String?
+            ) {
+                val result = responseString
+                Log.d("hasil", result + "")
+//                binding.progressBar.visibility = View.INVISIBLE
+
+                try {
+                    val responseObject = JSONObject(result)
+                    val titles = responseObject.getJSONArray("titles")
+                    val cover = responseObject.getJSONArray("image_urls")
+//                    Log.d("hasil title", "$yuy")
+                    for (i in 0 until titles.length()){
+                        val book = Book()
+                        book.title = titles[i] as String?
+                        book.cover = cover[i] as String?
+                        listBook.add(book)
+
+//                        Log.d("beneran kan ini ?", titles[i] as String)
+                    }
+
+//
+//                    for (i in 0 until responseObject.length()){
+//                        val item = responseObject.getJSONObject(i)
+//                        val titles = item.getString("login")
+//                        val avatar = item.getString("avatar_url")
+//                        val book = Book()
+//                        book
+//                        user.username = username
+//                        Log.d("hasil", username)
+//                        Log.d("hasil", avatar)
+//                        user.avatar = avatar
+//                        listUser.add(user)
+//                    }
+                    showRecycleViewList()
+
+                }catch (e : Exception){
+//                    Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_SHORT).show()
+                    e.printStackTrace()
+                }
+            }
+
+            override fun onFailure(
+                statusCode: Int,
+                headers: Array<out Header>?,
+                responseString: String?,
+                throwable: Throwable?
+            ) {
+//                binding.progressBar.visibility = View.INVISIBLE
+                val errorMessage = when (statusCode) {
+                    401 -> "$statusCode : Bad Request"
+                    403 -> "$statusCode : Forbidden"
+                    404 -> "$statusCode : Not Found"
+                    else -> "$statusCode : ${error("eror")}"
+                }
+                Log.d("hasil", "error")
+//                Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_SHORT).show()
+            }
+
+        })
+    }
+
+    private fun showRecycleViewList(){
+        binding.rvForYou.layoutManager = LinearLayoutManager(context)
+        val listBookAdapter = BookAdapter(listBook)
+        binding.rvForYou.adapter = listBookAdapter
     }
 }

@@ -6,8 +6,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Book(
-    var title: String,
-    var author: String,
-    var genre: String,
-    var cover: String
+    var title: String? = null,
+    var author: String? = null,
+    var genre: String? = null,
+    var cover: String? = null
 ) : Parcelable
