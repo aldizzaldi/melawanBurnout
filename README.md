@@ -7,15 +7,17 @@ The main feature of this app is book recommender system, so the user could get t
 
 # Screenshot of this App
 
-<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/readme_discover.png"
-     alt="melawanBurnout 1"
-     style="float: left; margin-right: 10px;"
-     width="200" />
 <img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/logo_macapedia.jpeg"
      alt="melawanBurnout 2"
      style="float: left; margin-right: 10px;"
      width="200" />
-     
+<img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/readme_discover.png"
+     alt="melawanBurnout 1"
+     style="float: left; margin-right: 10px;"
+     width="200" />
+
+## Screenshot of Mockup App
+
 <img src="https://github.com/aldizzaldi/melawanBurnout/blob/master/screenshoot/home.jpeg"
      alt="melawanBurnout 3"
      style="float: left; margin-right: 10px;"
